@@ -11,5 +11,16 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/icmx/just-react.git"
-  }
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js"
 }
