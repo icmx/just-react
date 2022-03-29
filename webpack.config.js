@@ -106,6 +106,14 @@ const createBaseConfig = ({ paths, meta }) => ({
         },
       ],
     }),
+    new HtmlWebpackPlugin({
+      template: `${paths.src}/index.html`,
+      filename: `index.html`,
+      templateParameters: {
+        version: meta.version,
+        license: meta.license,
+      },
+    }),
   ],
 });
 
